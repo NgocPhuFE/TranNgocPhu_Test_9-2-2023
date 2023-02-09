@@ -18,8 +18,23 @@
   }
   .menu {
     width: 100%;
-    height: 100%;
+    position: fixed;
+    height: unset;
+    z-index: 132123;
   }
+  .menu li:not(:nth-child(1)) {
+    display: none;
+  }
+  .btnResponsive {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 110%;
+    cursor: pointer;
+  }
+
   .content {
     grid-template-rows: 0.1fr 0.1fr 0.5fr;
   }

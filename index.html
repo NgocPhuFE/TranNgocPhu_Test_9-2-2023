@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
   <body>
     <div id="container">
@@ -17,7 +21,7 @@
           <li>News</li>
           <li>Blog</li>
           <li>Contact</li>
-          <div class="btnResponsive"></div>
+          <div class="btnResponsive"><i class="fa-solid fa-bars"></i></div>
         </ul>
       </nav>
       <div class="content">
@@ -96,4 +100,23 @@
       </div>
     </div>
   </body>
+  <script>
+    const btn = document.querySelector(".btnResponsive");
+    const li = document.querySelectorAll(".menu li:not(:nth-child(1))");
+    btn.onclick = (e) => {
+      if (document.querySelector(".fa-solid").classList.contains("fa-bars")) {
+        document.querySelector(".fa-solid").classList.add("fa-xmark");
+        document.querySelector(".fa-solid").classList.remove("fa-bars");
+        li.forEach((value) => {
+          value.style.display = "block";
+        });
+      } else {
+        document.querySelector(".fa-solid").classList.add("fa-bars");
+        document.querySelector(".fa-solid").classList.remove("fa-xmark");
+        li.forEach((value) => {
+          value.style.display = "none";
+        });
+      }
+    };
+  </script>
 </html>

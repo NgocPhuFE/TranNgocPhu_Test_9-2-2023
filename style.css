@@ -20,6 +20,9 @@ body {
   background-color: #000000;
   color: #504e4f;
 }
+.btnResponsive {
+  display: none;
+}
 .menu ul {
   list-style: none;
   padding: 0px;
