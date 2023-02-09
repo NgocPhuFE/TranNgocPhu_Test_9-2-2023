@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1024px) {
+  .description-text p {
+    font-size: 90%;
+    width: 100%;
+  }
+  .option-title {
+    font-size: 110%;
+  }
+  .option-img img {
+    width: 100%;
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 912px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    grid-template-rows: 0.1fr 0.1fr 0.5fr;
+  }
+  .option {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} ;
