@@ -38,7 +38,18 @@
   .content {
     grid-template-rows: 0.1fr 0.1fr 0.5fr;
   }
+  .logo {
+    margin: 10% 0 0 0;
+  }
   .option {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 414px) {
+  .logo {
+    margin: 15% 0 0 0;
+  }
+  .logo img {
+    width: 70%;
   }
 } ;
